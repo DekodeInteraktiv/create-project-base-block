@@ -1,0 +1,28 @@
+/**
+ * WordPress dependencies
+ */
+import { useBlockProps, InnerBlocks } from '@wordpress/block-editor';
+
+/**
+ * Fill out the template and allowedBlocks with the desired blocks.
+ */
+/* const TEMPLATE = []; */
+/* const ALLOWED_BLOCKS = []; */
+
+
+function Edit() {
+	const blockProps = useBlockProps( {
+		className: '{{namespace}}-{{slug}}',
+	} );
+
+	return (
+		<div { ...blockProps }>
+			<InnerBlocks
+				/* template={ TEMPLATE } */
+				/* allowedBlocks={ ALLOWED_BLOCKS } */
+			/>
+		</div>
+	);
+}
+
+export default Edit;
