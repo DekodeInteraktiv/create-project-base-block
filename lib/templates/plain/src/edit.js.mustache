@@ -1,0 +1,18 @@
+/**
+ * WordPress dependencies
+ */
+import { useBlockProps } from '@wordpress/block-editor';
+
+function Edit() {
+	const blockProps = useBlockProps( {
+		className: '{{namespace}}-{{slug}}',
+	} );
+
+	return (
+		<div { ...blockProps }>
+			{{Title}}
+		</div>
+	);
+}
+
+export default Edit;

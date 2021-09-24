@@ -28,7 +28,7 @@
 	],
 	"main": "index.js",
 	"bin": {
-		"wp-create-block": "./index.js"
+		"t2-create-block": "./index.js"
 	},
 	"dependencies": {
 		"chalk": "^4.0.0",
@@ -40,8 +40,6 @@
 		"lodash": "^4.17.21",
 		"make-dir": "^3.0.0",
 		"mustache": "^4.0.0",
-		"npm-package-arg": "^8.0.1",
-		"rimraf": "^3.0.2",
 		"write-pkg": "^4.0.0"
 	},
 	"publishConfig": {

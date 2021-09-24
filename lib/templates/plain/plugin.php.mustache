@@ -1,0 +1,46 @@
+<?php
+/**
+ * Plugin Name:       {{title}}
+{{#description}}
+ * Description:       {{description}}
+{{/description}}
+ * Text Domain:       {{textdomain}}
+ *
+ * @package           {{namespace}}
+ */
+
+declare( strict_types = 1 );
+
+namespace NAMESPACE/Blocks/BLOCK_NAME;
+
+/**
+ * Server Side render callback.
+ *
+ * @param array  $attributes Block attritues.
+ * @return string
+ */
+function render( array $attributes ) : string {
+	$block_attributes = get_block_wrapper_attributes( [
+		'class' => '{{namespace}}-{{slug}}'
+	] );
+
+	return sprintf( '
+		<div %s>
+			<h2>{{title}}<h2>
+		</div>', 
+		$block_attributes
+	);
+}
+
+/**
+ * Register plugin Block Type.
+ *
+ * @return void
+ */
+function block_init() {
+	\register_block_type_from_metadata( __DIR__, [
+		'render_callback' => __NAMESPACE__ . '\\render',
+	] );
+}
+
+\add_action( 'init', 'block_init' );
