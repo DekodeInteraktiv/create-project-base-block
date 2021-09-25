@@ -11,11 +11,13 @@
 
 declare( strict_types = 1 );
 
+namespace NAMESPACE\Blocks\BLOCK_NAME;
+
 /**
  * Server Side render callback.
  *
- * @param array  $attributes Block attritues.
- * @param string $content Innerblock content.
+ * @param  array  $attributes Block attritues.
+ * @param  string $content Innerblock content.
  * @return string
  */
 function render( array $attributes, string $content ) : string {
