@@ -1,5 +1,5 @@
 {
-	"name": "@t2/create-project-base-block",
+	"name": "@t2/create-block",
 	"version": "0.1.0",
 	"description": "Generates PHP, JS and CSS code for registering a block for a WordPress plugin.",
 	"author": "Dekode Interaktiv AS",
@@ -29,7 +29,7 @@
 	],
 	"main": "index.js",
 	"bin": {
-		"t2-create-block": "./index.js"
+		"create-project-base-block": "./index.js"
 	},
 	"dependencies": {
 		"chalk": "^4.0.0",
