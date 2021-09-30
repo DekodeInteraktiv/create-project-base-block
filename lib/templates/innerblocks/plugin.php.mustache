@@ -1,6 +1,6 @@
 <?php
 /**
- * Plugin Name:       {{title}}
+ * Plugin Name:       Block - {{title}}
 {{#description}}
  * Description:       {{description}}
 {{/description}}
@@ -11,7 +11,7 @@
 
 declare( strict_types = 1 );
 
-namespace NAMESPACE\Blocks\BLOCK_NAME;
+namespace {{phpnamespace}}\Blocks\{{phpnamespaceslug}};
 
 /**
  * Server Side render callback.
@@ -21,8 +21,8 @@ namespace NAMESPACE\Blocks\BLOCK_NAME;
  * @return string
  */
 function render( array $attributes, string $content ) : string {
-	$block_attributes = get_block_wrapper_attributes( [
-		'class' => '{{namespace}}-{{slug}}'
+	$wrapper_attributes = get_block_wrapper_attributes( [
+		'class' => '{{namespace}}-{{slug}}',
 	] );
 
 	return sprintf( '
@@ -32,7 +32,7 @@ function render( array $attributes, string $content ) : string {
 				%s
 			</div>
 		</div>', 
-		$block_attributes, 
+		$wrapper_attributes, 
 		$content 
 	);
 }
@@ -48,4 +48,4 @@ function block_init() {
 	] );
 }
 
-\add_action( 'init', 'block_init' );
+\add_action( 'init', __NAMESPACE__ . '\\block_init' );

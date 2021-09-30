@@ -8,11 +8,7 @@ function Edit() {
 		className: '{{namespace}}-{{slug}}',
 	} );
 
-	return (
-		<div { ...blockProps }>
-			{{title}}
-		</div>
-	);
+	return <div { ...blockProps }>{{title}}</div>;
 }
 
 export default Edit;
