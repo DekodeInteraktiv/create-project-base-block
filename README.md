@@ -1,6 +1,6 @@
 # Create Project Base Block
 
-Create Project Base Block is an easy way to create blocks compatible with Dekodes Project Base template. It generates PHP, JS, CSS, and everything else you need to get started with development.
+Create Project Base Block is an easy way to create blocks compatible with Dekodes [Project Base template](https://github.com/dekodeInteraktiv/project-base). It generates PHP, JS, CSS, and everything else you need to get started with development.
 
 ## Usage
 All of the configuration is set to all default values unless overridden with some of the options listed below. Running the script guides you through a block setup, allowing you to autofill everything from css-classes to the `block.json`-file.
