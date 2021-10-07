@@ -14,7 +14,7 @@
 	"homepage": "http://dekode.no",
 	"repository": {
 		"type": "git",
-		"url": "https://github.com/DekodeInteraktiv/create-project-base-block"
+		"url": "git://github.com/DekodeInteraktiv/create-project-base-block"
 	},
 	"bugs": {
 		"url": "https://github.com/DekodeInteraktiv/create-project-base-block/issues"
