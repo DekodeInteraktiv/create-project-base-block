@@ -3,6 +3,7 @@
 Create Project Base Block is an easy way to create blocks compatible with Dekodes [Project Base template](https://github.com/dekodeInteraktiv/project-base). It generates PHP, JS, CSS, and everything else you need to get started with development.
 
 ## Usage
+
 All of the configuration is set to all default values unless overridden with some of the options listed below. Running the script guides you through a block setup, allowing you to autofill everything from css-classes to the `block.json`-file.
 
 Options:
@@ -21,6 +22,7 @@ Options:
 When you scaffold a block, you must provide at least a `slug` name and the `namespace` which usually corresponds to either the `theme` name or the project textdomain. In most cases, we recommended pairing blocks with plugins rather than themes, because only using plugin ensures that all blocks still work when your theme changes.
 
 ### The two templates:
+
 The two mentioned templates, `plain` and `innerblocks`, let you chose between two server side rendering-ready block boilerplates.
 
 The `innerblock` template comes ready with an innerblock prepped `edit`-function letting you easily define both the block template, as well as allowed blocks. The render method prints the innerblock content in a wrapper.
