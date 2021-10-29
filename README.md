@@ -30,3 +30,16 @@ The `innerblock` template comes ready with an innerblock prepped `edit`-function
 The `plain` template comes ready with all the files you need to get started on a custom block.
 
 Both templates come with all the necessary `JS`, `CSS` and `PHP`-files, and the blocks follow a `<namespace>-<slug>` name structure for css classes.
+
+## Usage with project base
+
+`create-project-base-block` is a part of [Project Base](https://github.com/dekodeInteraktiv/project-base) as of late october 2021. To create a block, just run 
+`npm run create-block`, or `npm run create-innerblock-block` from the project root.
+
+### Adding the scripts to a pre-update project base installation
+
+Adding the scripts to an existing project base installation is super easy as well. Just add the two lines below to the `scripts`-section of your `package.json`-file, and you're done!
+```
+"create-block": "cd packages/plugins && npx dekodeinteraktiv/create-project-base-block",
+"create-innerblock-block": "cd packages/plugins && npx dekodeinteraktiv/create-project-base-block --template innerblocks", 
+```
