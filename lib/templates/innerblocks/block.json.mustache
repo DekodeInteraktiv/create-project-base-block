@@ -1,13 +1,16 @@
 {
 	"apiVersion": 2,
-	"name": "{{namespace}}/block-{{slug}}",
+	"name": "{{namespace}}/{{slug}}",
 	"title": "{{title}}",
 	"description": "{{description}}",
 	"category": "{{category}}",
+	"textdomain": "{{namespace}}",
+	"icon": "",
 	"supports": {
 		"align": ["wide", "full"]
 	},
-	"textdomain": "{{namespace}}",
+	"attributes": {
+	},
 	"editorScript": "file:build/index.js",
 	"style": "file:build/style.css"
 }

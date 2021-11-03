@@ -1,12 +1,15 @@
 <?php
 /**
- * Plugin Name:       Block - {{title}}
+ * Plugin Name: Block - {{title}}
 {{#description}}
- * Description:       {{description}}
+ * Description: {{description}}
 {{/description}}
- * Text Domain:       {{textdomain}}
+ * Text Domain: {{textdomain}}
+ * Author:      Dekode Interaktiv
+ * Version:     1.0.0
+ * AuthorURI:   https://dekode.no/
  *
- * @package           {{namespace}}
+ * @package     {{namespace}}
  */
 
 declare( strict_types = 1 );
@@ -21,9 +24,7 @@ namespace {{phpnamespace}}\Blocks\{{phpnamespaceslug}};
  * @return string
  */
 function render( array $attributes, string $content ) : string {
-	$wrapper_attributes = get_block_wrapper_attributes( [
-		'class' => '{{namespace}}-{{slug}}',
-	] );
+	$wrapper_attributes = get_block_wrapper_attributes();
 
 	return sprintf( '
 		<div %s>

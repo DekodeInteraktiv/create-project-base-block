@@ -9,19 +9,12 @@ import { useBlockProps, InnerBlocks } from '@wordpress/block-editor';
 const TEMPLATE = [];
 const ALLOWED_BLOCKS = [];
 
-function Edit() {
-	const blockProps = useBlockProps( {
-		className: '{{namespace}}-{{slug}}',
-	} );
+export default function Edit() {
+	const blockProps = useBlockProps();
 
 	return (
-		<div { ...blockProps }>
-			<InnerBlocks
-				template={ TEMPLATE }
-				allowedBlocks={ ALLOWED_BLOCKS }
-			/>
+		<div {...blockProps}>
+			<InnerBlocks template={TEMPLATE} allowedBlocks={ALLOWED_BLOCKS} />
 		</div>
 	);
 }
-
-export default Edit;
