@@ -1,6 +1,6 @@
 {
 	"name": "@dekode/create-project-base-block",
-	"version": "0.1.0",
+	"version": "1.0.0",
 	"description": "Generates PHP, JS and CSS code for registering a block for a WordPress plugin.",
 	"author": "Dekode Interaktiv AS",
 	"license": "GPL-2.0-or-later",
