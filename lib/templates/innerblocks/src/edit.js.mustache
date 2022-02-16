@@ -10,7 +10,9 @@ const TEMPLATE = [];
 const ALLOWED_BLOCKS = [];
 
 export default function Edit() {
-	const blockProps = useBlockProps();
+	const blockProps = useBlockProps( {
+		className: '{{namespace}}-{{slug}}',
+	} );
 
 	return (
 		<div {...blockProps}>

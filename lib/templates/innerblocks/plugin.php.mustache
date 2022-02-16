@@ -25,11 +25,13 @@ namespace {{phpnamespace}}\Blocks\{{phpnamespaceslug}};
  * @return string
  */
 function render( array $attributes, string $content ) : string {
-	$wrapper_attributes = get_block_wrapper_attributes();
+	$wrapper_attributes = get_block_wrapper_attributes( [
+		'class' => '{{namespace}}-{{slug}}',
+	] );
 
 	return sprintf( '
 		<div %s>
-			<div class="wp-block-{{namespace}}-{{slug}}__blocks">
+			<div class="{{namespace}}-{{slug}}__blocks">
 				%s
 			</div>
 		</div>',
