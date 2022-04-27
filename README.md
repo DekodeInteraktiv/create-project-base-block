@@ -31,6 +31,13 @@ The `plain` template comes ready with all the files you need to get started on a
 
 Both templates come with all the necessary `JS`, `CSS` and `PHP`-files, and the blocks follow a `<namespace>-<slug>` name structure for css classes.
 
+### TypeScript templates
+
+The two block templates both come with a TypeScript version. Just append `TypeScript` to the template name to generate a TypeScript version of a block.
+
+`npx dekodeinteraktiv/create-project-base-block --template innerblocksTypeScript`
+`npx dekodeinteraktiv/create-project-base-block --template plainTypeScript`
+
 ## Usage with project base
 
 `create-project-base-block` is a part of [Project Base](https://github.com/dekodeInteraktiv/project-base) as of late october 2021. To create a block, just run 
