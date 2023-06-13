@@ -16,6 +16,7 @@ Options:
 --title <value>              display title for the block
 --short-description <value>  short description for the block
 --category <name>            category name for the block
+--keywords <value>           keywords of the blocks use, and relationships, for example `T2`
 -h, --help                   output usage information
 ```
 
