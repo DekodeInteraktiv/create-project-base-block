@@ -1,1 +1,0 @@
-{"version":3,"file":"index.css","mappings":";;;AAAA;CACC,sBAAsB;CACtB,aAAa;AACd","sources":["webpack://po/./src/editor.css"],"sourcesContent":[".project-name-po {\n\tborder: 1px solid #000;\n\tpadding: 1rem;\n}\n"],"names":[],"sourceRoot":""}

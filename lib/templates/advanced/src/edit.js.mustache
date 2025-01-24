@@ -14,11 +14,10 @@ import {
 import { __ } from '@wordpress/i18n';
 
 const TEMPLATE = [
-
+	['core/heading', { placeholder: 'Add Title' }],
+	['core/paragraph', { placeholder: 'Add Description' }],
 ];
-const ALLOWED_BLOCKS = [
-	
-];
+const ALLOWED_BLOCKS = ['core/heading', 'core/paragraph'];
 
 export default function Edit() {
 	const blockProps = useBlockProps( {

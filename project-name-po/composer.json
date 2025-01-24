@@ -1,8 +1,0 @@
-{
-	"name": "project-name/po",
-	"description": "Example block description.",
-	"type": "wordpress-plugin",
-	"license": "GPL-3.0-or-later",
-	"version": "1.0.0",
-	"keywords": "T2"
-}
