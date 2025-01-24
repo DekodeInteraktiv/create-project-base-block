@@ -1,0 +1,21 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 3,
+  "name": "project-name/po",
+  "title": "Block Name",
+  "description": "Example block description.",
+  "category": "text",
+  "textdomain": "project-name",
+  "icon": "smiley",
+  "supports": {
+    "align": [
+      "wide",
+      "full"
+    ]
+  },
+  "attributes": {},
+  "editorScript": "file:index.js",
+  "editorStyle": "file:index.css",
+  "viewScript": "file:view.js",
+  "style": "file:view.css"
+}

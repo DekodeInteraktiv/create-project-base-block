@@ -1,0 +1,21 @@
+{
+	"name": "po",
+	"version": "1.0.0",
+	"description": "Example block description.",
+	"author": "Dekode Interaktiv",
+	"homepage": "https://dekode.no",
+	"main": "build/index.js",
+	"scripts": {
+		"build": "wp-scripts build --webpack-copy-php",
+		"format": "wp-scripts format",
+		"lint:css": "wp-scripts lint-style",
+		"lint:js": "wp-scripts lint-js",
+		"start": "wp-scripts start --webpack-copy-php"
+	},
+	"devDependencies": {
+		"@wordpress/block-editor": "^14.11.0",
+		"@wordpress/components": "^29.2.0",
+		"@wordpress/i18n": "^5.16.0",
+		"@wordpress/scripts": "^30.9.0"
+	}
+}

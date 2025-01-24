@@ -11,7 +11,7 @@ Options:
 ```bash
 <slug>                       block slug
 -V, --version                output the version number
--t, --template <name>        block template type name, allowed values: "innerblocks", "plain" (default: "plain")
+-t, --template <name>        block template type name, allowed values: "advanced", "innerblocks", "plain" (default: "plain")
 --namespace <value>          internal namespace for the block name
 --title <value>              display title for the block
 --short-description <value>  short description for the block
@@ -22,11 +22,13 @@ Options:
 
 When you scaffold a block, you must provide at least a `slug` name and the `namespace` which usually corresponds to either the `theme` name or the project textdomain. In most cases, we recommended pairing blocks with plugins rather than themes, because only using plugin ensures that all blocks still work when your theme changes.
 
-### The two templates:
+### The templates:
 
-The two mentioned templates, `plain` and `innerblocks`, let you chose between two server side rendering-ready block boilerplates.
+The templates lets you chose between two server side rendering-ready block boilerplates.
 
 The `innerblock` template comes ready with an innerblock prepped `edit`-function letting you easily define both the block template, as well as allowed blocks. The render method prints the innerblock content in a wrapper.
+
+The `advanced` templates comes ready with Innerblocks, InspectorControls and BlockControls.
 
 The `plain` template comes ready with all the files you need to get started on a custom block.
 
