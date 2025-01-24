@@ -37,13 +37,15 @@
 		"chalk": "^4.0.0",
 		"check-node-version": "^4.1.0",
 		"commander": "^4.1.0",
+		"execa": "^9.5.2",
 		"fast-glob": "^2.2.7",
 		"inquirer": "^7.1.0",
 		"lodash": "^4.17.21",
 		"make-dir": "^3.0.0",
 		"mustache": "^4.0.0",
-		"write-pkg": "^4.0.0",
-		"prettier": "npm:wp-prettier@^2.2.1-beta-1"
+		"npm-package-arg": "^12.0.1",
+		"prettier": "npm:wp-prettier@^2.2.1-beta-1",
+		"write-pkg": "^4.0.0"
 	},
 	"publishConfig": {
 		"access": "public"
