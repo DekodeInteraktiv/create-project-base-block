@@ -20,7 +20,7 @@ namespace {{phpnamespace}}\Blocks;
 \array_map(
 	fn( $f ) => require_once $f,
 	array_merge(
-		\glob( __DIR__ . '/build/block.php' ),  // Match /build/block.php
-		\glob( __DIR__ . '/build/*/block.php' ) // Match /build/*/block.php
+		\glob( __DIR__ . '/build/block.php' ),  // Match /build/block.php.
+		\glob( __DIR__ . '/build/*/block.php' ) // Match /build/*/block.php.
 	)
 );
